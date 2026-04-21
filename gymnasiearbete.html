@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymnasiearbete | Donya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #08080a;
+            --accent: #e5c9b2;
+            --text-bright: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.6);
+            --glass: rgba(255, 255, 255, 0.02);
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-bright);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        /* Bakgrundseffekt */
+        .aurora-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1; filter: blur(120px); opacity: 0.4;
+        }
+        .aura { position: absolute; border-radius: 50%; }
+        .aura-1 { width: 600px; height: 600px; background: #2d3436; top: -10%; right: -5%; }
+
+        .container { width: 100%; max-width: 800px; padding: 0 20px; }
+
+        .work-content {
+            background: var(--glass);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            padding: 60px;
+            line-height: 1.8;
+        }
+
+        h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { font-family: 'Playfair Display', serif; color: var(--accent); margin: 35px 0 15px; font-size: 1.8rem; }
+        p { margin-bottom: 20px; opacity: 0.9; }
+        
+        .subtitle { 
+            color: var(--accent); 
+            letter-spacing: 0.2em; 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            margin-bottom: 40px; 
+        }
+
+        footer { text-align: center; margin-top: 60px; font-size: 0.6rem; letter-spacing: 0.5em; opacity: 0.4; }
+
+        @media (max-width: 768px) {
+            .work-content { padding: 30px; border-radius: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="aurora-container">
+        <div class="aura aura-1"></div>
+    </div>
+
+    <div class="container">
+        <div class="work-content">
+            <h1>Gymnasiearbete</h1>
+            <p class="subtitle">Kundbemötande på Pressbyrån</p>
+
+            <h2>Inledning</h2>
+            <p>Under min APL-period har jag haft min APL på Pressbyrån i Malmö Centralstation. Det är en arbetsplats där tempot nästan alltid är högt och där varje dag bjuder på många olika kundmöten. Eftersom butiken ligger mitt i centralstationen passerar det ständigt människor som är på väg till eller från sina tåg, och de flesta har bråttom.</p>
+
+            <h2>Kundmöten i vardagen</h2>
+            <p>En vanlig dag i butiken märks det tydligt att kunderna vill ha snabb och smidig service. Många kommer in för att köpa något enkelt innan resan fortsätter, till exempel en smörgås, kaffe, snacks eller en tidning. Kundmötet börjar med att jag hälsar och möter kundens blick för att skapa ett trevligt första intryck.</p>
+
+            <h2>Första intryck och bemötande</h2>
+            <p>De första sekunderna sätter tonen och påverkar hur kunden upplever både mig och butiken. Ett enkelt hej tillsammans med ett vänligt kroppsspråk gör att kunden känner sig sedd och välkommen. Jag tänker också på hur jag använder min röst, eftersom ett lugnt och trevligt tonläge kan skapa en trygg och positiv känsla.</p>
+
+            <h2>Viktiga lärdomar</h2>
+            <p>Jag har lärt mig att ett bra bemötande inte bara handlar om att vara trevlig, utan också om tydlighet, tålamod och engagemang. Under tiden har jag själv utvecklats mycket i min roll och blivit tryggare i mötet med kunder. Ett gott kundbemötande bygger på respekt, lyhördhet och ett professionellt sätt att möta varje kund.</p>
+        </div>
+
+        <footer>DONYA HAWILO &bull; 2024</footer>
+    </div>
+
+</body>
+</html>
